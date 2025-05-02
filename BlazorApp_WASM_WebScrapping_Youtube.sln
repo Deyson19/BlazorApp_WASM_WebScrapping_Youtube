@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp_WASM_WebScrapping_Youtube", "BlazorApp_WASM_WebScrapping_Youtube.csproj", "{02E7870F-593D-4461-BEFB-4C977EC53DCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPi_Scrapping_Youtube", "..\WebAPi_Scrapping_Youtube\WebAPi_Scrapping_Youtube.csproj", "{F9F3A259-E383-4561-81E2-0E8392273D5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{02E7870F-593D-4461-BEFB-4C977EC53DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02E7870F-593D-4461-BEFB-4C977EC53DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E7870F-593D-4461-BEFB-4C977EC53DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F3A259-E383-4561-81E2-0E8392273D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F3A259-E383-4561-81E2-0E8392273D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F3A259-E383-4561-81E2-0E8392273D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F3A259-E383-4561-81E2-0E8392273D5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

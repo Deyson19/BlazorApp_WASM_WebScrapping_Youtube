@@ -1,0 +1,37 @@
+﻿@using BlazorApp_WASM_WebScrapping_Youtube.Models
+
+
+@code {
+    [Parameter]
+    public Video video { get; set; }
+}
+
+<div class="card mb-3 shadow-sm" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <a href="@video.Url" target="_blank">
+                <img src="@video.ThumbnailUrl" class="img-fluid rounded-start" alt="@video.Title" />
+                <span class="badge bg-dark position-absolute" style="right: 10px; bottom: 10px;">@video.Duration</span>
+            </a>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <a href="@video.Url" target="_blank" class="text-decoration-none text-dark">
+                    <h5 class="card-title">@video.Title</h5>
+                </a>
+                <p class="card-text mb-1">
+                    <small class="text-muted">@video.ViewCount</small>
+                </p>
+                @if (!string.IsNullOrEmpty(video.LikeCount))
+                {
+                    <p class="card-text mb-1">
+                        <small class="text-muted">👍 @video.LikeCount</small>
+                    </p>
+                }
+                <p class="card-text">
+                    <small class="text-muted">@video.PublishedDate</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
